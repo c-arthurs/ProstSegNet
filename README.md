@@ -2,7 +2,7 @@
 
 Keras unet and then chromogen analysis for prostate histopathology images.
 
-## Repo layout 
+### Repo layout 
 
 ``` bash
 .
@@ -13,4 +13,15 @@ Keras unet and then chromogen analysis for prostate histopathology images.
     ├── checkfiles.py # for checking the dataset for corrupt files
     └── unet.py # for trianing vanilla unet model 
 ```
+
+### Application of scripts
+
+The scripts can be applied in the following way:
+- Train three Unet's using unet.py 
+	- One for acini recognition
+	- One for nuclei recognition
+	- One for stroma recognition
+- Apply these Unet models to:
+	- A) Segment images into masked areas of interest 
+	- B) Calculate the amount of DAB/Chromogen stain in these areas
 
